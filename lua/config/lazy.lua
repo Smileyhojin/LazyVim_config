@@ -16,7 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = {
-    -- add LazyVim and import its plugins
+    -- add LazyVim and import its default plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- extras (lazy.extras)
     { import = "lazyvim.plugins.extras.coding.yanky" },
@@ -26,7 +26,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.rust" },
     { import = "lazyvim.plugins.extras.ai.claudecode" },
     { import = "lazyvim.plugins.extras.ai.copilot" },
-    -- import/override with your plugins
+    -- other plugins (direct implementations or change of configs)
     { import = "plugins" },
   },
   defaults = {
@@ -38,7 +38,6 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  -- install = { colorscheme = { "tokyonight", "habamax" } },
   checker = {
     enabled = true, -- check for plugin updates periodically
     notify = false, -- notify on update
