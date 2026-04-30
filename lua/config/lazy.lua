@@ -24,8 +24,9 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.markdown" },
     { import = "lazyvim.plugins.extras.lang.rust" },
-    { import = "lazyvim.plugins.extras.ai.claudecode" },
+    -- { import = "lazyvim.plugins.extras.ai.claudecode" },
     { import = "lazyvim.plugins.extras.ai.copilot" },
+    { import = "lazyvim.plugins.extras.ai.sidekick" },
     -- other plugins (direct implementations or change of configs)
     { import = "plugins" },
   },
